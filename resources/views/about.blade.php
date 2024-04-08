@@ -9,20 +9,18 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="/">eLibroPlanet</a>
-            </div>
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="/">eLibroPlanet</a> 
         </nav>
     </header>
 
     <h3>Equipo</h3>
     <ol>
         <li>Hazel Brendaly Granados Ramos (SMSS041722)</li>
-        <li>Saúl Salomón Soto Machuca ()</li>
-        <li>Erick David Munguia Zelaya ()</li>
+        <li>Saúl Salomón Soto Machuca (SMSS057922)</li>
+        <li>Erick David Munguia Zelaya (SMSS020522)</li>
         <li>Olga Vanessa Sorto Fuentes (SMSS055722)</li>
     </ol>
-    <a href="/" class="btn">Inicio</a>
+    <a id="btn_ab" href="/" class="btn">Inicio</a>
 </body>
 </html>

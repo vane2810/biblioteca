@@ -1,7 +1,33 @@
+header {
+  background-color: #53a08e; /* estilo de la barra*/
+  padding: 20px; 
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.navbar-brand { /* estilo de letra eLibroPlanet*/
+  font-size: 1.5rem; 
+  color: #fff;
+}
+
 h3{
-  font-family: 'Courier New', Courier, monospace;
+  margin-left: 30px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 ol{
-  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#btn_ab {
+  color: #f7f0ba; 
+  background-color: #53a08e;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  float: left; 
+  margin-left: 30px;     
 }

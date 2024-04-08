@@ -21,7 +21,6 @@
             Nuestro objetivo es proporcionar a estudiantes, educadores y profesionales una biblioteca digital completa y accesible.</p>
     </section>
 
-
     <div class="d-flex justify-content-between">
         <div class="card">
             <img src="{{ asset('img/home/imagen1.jpg') }}" class="card-img-top">
@@ -51,8 +50,8 @@
 
     <h4>Echa un vistazo a lo que puedes encontrar</h4>
 
-    <div id="contenedor">
-        <div id="carrusel" class="carousel slide" data-ride="carousel">
+    <div id="carrusel1-container">
+        <div id="carrusel1" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="{{ asset('img/home/imagen4.jpg') }}" class="d-block w-100">
@@ -65,13 +64,16 @@
                 </div>
             </div>
         </div>
-        <div id="txt">
-            <p>Sumérgete en nuestro catálogo de imágenes literarias y deja que la creatividad y la imaginación te transporten a nuevos mundos literarios.</p>  
-        </div>
+        <p id="txt1">Sumérgete en nuestro catálogo de imágenes literarias y deja que la creatividad y la imaginación 
+         te transporten a nuevos mundos literarios.
+        </p> 
     </div>
 
-    <div id="contenedor">
-        <div id="carrusel" class="carousel slide" data-ride="carousel">
+    <div id="carrusel2-container">
+        <p id="txt2">En nuestro apartado dedicado a los recursos para maestros, los usuarios encontrarán una amplia variedad 
+            de herramientas y materiales diseñados para enriquecer y apoyar su labor educativa. 
+        </p> 
+        <div id="carrusel2" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="{{ asset('img/home/imagen7.jpg') }}" class="d-block w-100">
@@ -84,18 +86,17 @@
                 </div>
             </div>
         </div>
-    
-        <div id="txt">
-            <p>En nuestro apartado dedicado a los recursos para maestros, los usuarios encontrarán una amplia variedad de herramientas y materiales diseñados para enriquecer y apoyar su labor educativa. </p>  
-        </div>
     </div>
+
+     
+    
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 <footer>
-        <a id="btn" href="/about">Acerca de nosotros</a>
+        <a class="btn" id="btn1" href="/about">Acerca de nosotros</a>
     </footer>
 </html>
 
