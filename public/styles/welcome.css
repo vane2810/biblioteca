@@ -1,3 +1,51 @@
-btn{
-    appearance: none;
+header {
+    background-color: #53a08e; /* estilo de la barra*/
+    padding: 20px; 
+    color: #fff;
+}
+
+.navbar-brand { /* estilo de letra eLibroPlanet*/
+    font-size: 1.5rem; 
+    color: #fff;
+}
+
+.card{
+    width: 22rem;
+    margin: auto;
+}
+.card-img-top{
+    width: 22rem;
+    height: 26rem;
+}
+
+#carrusel{ /* carrusel */
+    width: 375px; 
+    height: 400px;
+}
+.carousel-inner img { /* imagenes del carrusel*/
+    width: 375px; 
+    height: 400px; 
+}
+#contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+footer {
+    background-color: #f7f0ba; 
+    padding: 40px;
+    color: #53a08e; 
+}
+
+
+#btn{
+    color: #f7f0ba; 
+    background-color: #53a08e;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    float: right;
+    margin-top: -20px;
 }
