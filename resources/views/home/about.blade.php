@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{asset('styles/about.css')}}">
+    <link rel="stylesheet" href="{{asset('styles/home/about.css')}}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Acerca de nosotros</title>
 </head>
@@ -24,3 +24,4 @@
     <a id="btn_ab" href="/" class="btn">Inicio</a>
 </body>
 </html>
+

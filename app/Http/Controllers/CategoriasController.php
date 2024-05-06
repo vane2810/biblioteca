@@ -3,15 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Categoria;
+use App\Models\Categorias;
 
 class CategoriasController extends Controller
 {
     
-public function index()
-{
-    $categories = Categoria::all();
-    return view('categories.index', compact('categories'));
-}
+    public function index()
+    {
+        $categorias = Categorias::all();
+        return view('categorias.index', compact('categorias'));
+    }
+    
 
 }

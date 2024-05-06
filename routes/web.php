@@ -2,18 +2,19 @@
 
 use Illuminate\Support\Facades\Route;
 
+// Home
 Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/login', function () {
-    return view('login');
-});
-
-Route::get('/categoria', function () {
-    return view('categoria');
+    return view('home.welcome');
 });
 
 Route::get('/about', function () {
-    return view('about');
+    return view('home.about');
+});
+
+// Categorias
+Route::get('/categorias', 'CategoriasController@index')->name('categorias.index');
+
+// Usuarios
+Route::get('/login', function () {
+    return view('usuarios.login');
 });
