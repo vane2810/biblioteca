@@ -12,6 +12,7 @@
     <header>
         <nav id= "barra"class="navbar navbar-expand-lg">
             <a class="navbar-brand" href="/">eLibroPlanet</a>
+            <a class="navbar-brand" href="/login">Iniciar sesión</a>
         </nav>
     </header>
 
