@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Categorias extends Model
+class Categoria extends Model
 {
     /**
      * The table associated with the model.
@@ -18,6 +18,6 @@ class Categorias extends Model
      *
      * @var array
      */
-    protected $fillable = ['name'];
+    protected $fillable = ['name', 'descripcion', 'imagen'];
 
 }

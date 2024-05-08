@@ -1,0 +1,17 @@
+header {
+    background-color: #53a08e; /* estilo de la barra*/
+    padding: 20px; 
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.navbar-brand { /* estilo de letra eLibroPlanet*/
+    font-size: 1.5rem; 
+    color: #fff;
+}   
+
+footer {
+    background-color: #f7f0ba; 
+    padding: 40px;
+    color: #53a08e; 
+}
