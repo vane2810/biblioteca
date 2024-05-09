@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Recursos extends Model
+class Recurso extends Model
 {
     /**
      * The table associated with the model.
@@ -18,6 +18,6 @@ class Recursos extends Model
      *
      * @var array
      */
-    protected $fillable = ['name'];
+    protected $fillable = ['titulo','descripcion'];
 
 }

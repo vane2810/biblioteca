@@ -14,7 +14,10 @@ return new class extends Migration
         Schema::create('recursos', function (Blueprint $table) {
             $table->id();
             $table->string("titulo");
-            $table->text("descripcion");
+            $table->text("descripcion")->nullable();
+            $table->string('doc');
+            $table->foreignId('autor_id')->constrained('autores');
+            $table->foreignId('editorial_id')->nullable()->constrained('editoriales');
             $table->timestamps();
         });
     }

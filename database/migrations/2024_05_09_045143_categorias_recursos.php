@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Categoria;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -9,12 +10,12 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
+    
+    public function up()
     {
-        Schema::create('editoriales', function (Blueprint $table) {
-            $table->id();
-            $table->string("nombre");
-            $table->string("pais")->nullable();
+        Schema::create('categoria_recurso', function (Blueprint $table) {
+            $table->foreignId('categoria_id')->constrained('categorias');
+            $table->foreignId('recurso_id')->constrained('recursos');
             $table->timestamps();
         });
     }
@@ -24,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('editoriales');
+        //
     }
 };

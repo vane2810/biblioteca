@@ -15,14 +15,7 @@
     </nav>
 </header>
 <body>
-    <a class="btn" id="btn" href="{{ route('categorias.crear') }}">Crear</a>
-
-    <script>
-        function msg() {
-            return confirm('¿Estás seguro de que deseas eliminar esta categoría?');
-        }
-    </script>
-
+    <a class="btn" id="btn_crear" href="{{ route('categorias.crear') }}">Crear</a>
     <div class="row">
         @foreach($categorias as $categoria)
             <div class="col-md-4">
@@ -31,7 +24,7 @@
                     <div class="card-body">
                         <h5 class="card-title">{{ $categoria->nombre }}</h5>
                         <p class="card-text">{{ $categoria->descripcion }}</p>
-                        
+                        <a href="{{ route('recursos.index', ['categoria' => $categoria->id]) }}" class="btn btn-primary">Recursos</a>
                         <a href="{{ route('categorias.editar', $categoria) }}" class="btn btn-primary">Editar</a>
 
                         <form action="{{ route('categorias.eliminar', $categoria) }}" method="POST">
@@ -44,7 +37,11 @@
             </div>
         @endforeach
     </div>
-    
+    <script>
+        function msg() {
+            return confirm('¿Estás seguro de que deseas eliminar esta categoría?');
+        }
+    </script>
 </body>
 <footer>
     <a class="btn" id="btn1" href="/about">Acerca de nosotros</a>

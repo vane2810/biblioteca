@@ -21,8 +21,9 @@ Route::get('/categorias/{categoria}/editar', [CategoriasController::class, 'edit
 Route::put('/categorias/{categoria}/actualizar', [CategoriasController::class, 'actualizar'])->name('categorias.actualizar');
 Route::delete('/categorias/{categoria}/eliminar', [CategoriasController::class, 'eliminar'])->name('categorias.eliminar');
 
+
 //Recursos
-Route::get('/recursos',[RecursosController::class,'index']);
+Route::get('categoria/{categoria}/recursos', [CategoriasController::class, 'recursos'])->name('recursos.index');
 
 // Usuarios
 Route::get('/login', function () {
