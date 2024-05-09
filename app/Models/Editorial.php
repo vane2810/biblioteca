@@ -6,18 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Editorial extends Model
 {
-    /**
-     * The table associated with the model.
-     *
-     * @var string
-     */
-    protected $table = 'editoriales';
+    protected $fillable = ['nombre', 'pais'];
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
-    protected $fillable = ['nombre','pais'];
-
+    public function recursos()
+    {
+        return $this->hasMany(Recurso::class);
+    }
 }

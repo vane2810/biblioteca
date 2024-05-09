@@ -6,18 +6,20 @@ use Illuminate\Database\Eloquent\Model;
 
 class Recurso extends Model
 {
-    /**
-     * The table associated with the model.
-     *
-     * @var string
-     */
-    protected $table = 'recursos';
+    protected $fillable = ['titulo', 'descripcion', 'doc', 'autor_id', 'editorial_id'];
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
-    protected $fillable = ['titulo','descripcion'];
+    public function autor()
+    {
+        return $this->belongsTo(Autor::class);
+    }
 
+    public function editorial()
+    {
+        return $this->belongsTo(Editorial::class);
+    }
+
+    public function categorias()
+    {
+        return $this->belongsToMany(Categoria::class);
+    }
 }

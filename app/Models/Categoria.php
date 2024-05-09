@@ -6,18 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Categoria extends Model
 {
-    /**
-     * The table associated with the model.
-     *
-     * @var string
-     */
-    protected $table = 'categorias';
+    protected $fillable = ['nombre','descripcion','imagen'];
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
-    protected $fillable = ['name', 'descripcion', 'imagen'];
-
+    public function recursos()
+    {
+        return $this->belongsToMany(Recurso::class);
+    }
 }
+
