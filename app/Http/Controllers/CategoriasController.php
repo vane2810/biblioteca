@@ -87,7 +87,4 @@ class CategoriasController extends Controller
         $recursos = $categoria->recursos; 
         return view('recursos.index', compact('categoria', 'recursos'));
     }
-
-
-    
 }

@@ -12,7 +12,7 @@
 
     @if ($errors->any())
         <div>
-            <strong>¡Ups! Hubo algunos problemas con los datos ingresados:</strong>
+            <strong>Hubo algunos problemas con los datos ingresados:</strong>
             <ul>
                 @foreach ($errors->all() as $error)
                     <li>{{ $error }}</li>
